@@ -7,7 +7,7 @@ from PIL import Image
 
 model = ResNet50(weights='imagenet')
 
-st.title('Image Classification with ResNet50')
+st.title('Image Classification')
 st.write('Upload an image')
 
 uploaded_file = st.file_uploader('Choose an image..', type=['jpg', 'jpeg', 'png'])
