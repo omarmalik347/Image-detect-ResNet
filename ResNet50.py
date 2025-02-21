@@ -1,11 +1,11 @@
 import streamlit as st
-from tensorflow.keras.applications import ResNet50
-from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
+from tensorflow.keras.applications import ResNet101
+from tensorflow.keras.applications.resnet import preprocess_input, decode_predictions
 from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
 
-model = ResNet50(weights='imagenet')
+model = ResNet101(weights='imagenet')
 
 st.title('Image Classification')
 st.write('Upload an image')
